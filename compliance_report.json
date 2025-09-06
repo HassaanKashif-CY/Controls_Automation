@@ -1,0 +1,136 @@
+{
+    "host": "DESKTOP-MAIANMK",
+    "timestamp": "2025-09-06 18:38:03",
+    "results": [
+        {
+            "control": "Antivirus (Defender)",
+            "status": "PASS",
+            "detail": "Windows Defender service is running",
+            "frameworks": {
+                "ISO27001": "A.12.2.1 - Controls against malware",
+                "SOC2": "CC6.7 - Protection from malicious code",
+                "PDPL": "Security Safeguards - Anti-malware controls"
+            }
+        },
+        {
+            "control": "Firewall Service",
+            "status": "PASS",
+            "detail": "Windows Firewall running",
+            "frameworks": {
+                "ISO27001": "A.13.1.1 - Network controls",
+                "SOC2": "CC6.6 - Network segmentation",
+                "PDPL": "Security Safeguards - Network protection"
+            }
+        },
+        {
+            "control": "Windows Update Service",
+            "status": "PASS",
+            "detail": "Windows Update running",
+            "frameworks": {
+                "ISO27001": "A.12.6.1 - Technical vulnerability management",
+                "SOC2": "CC7.1 - Vulnerability management",
+                "PDPL": "Security Safeguards - Patch & update management"
+            }
+        },
+        {
+            "control": "Password Policy",
+            "status": "PASS",
+            "detail": "Blank passwords not allowed",
+            "frameworks": {
+                "ISO27001": "A.9.4.3 - Password management",
+                "SOC2": "CC6.2 - Authentication mechanisms",
+                "PDPL": "Authentication & credential hygiene"
+            }
+        },
+        {
+            "control": "BitLocker",
+            "status": "FAIL",
+            "detail": "BitLocker not enabled",
+            "frameworks": {
+                "ISO27001": "A.10.1 - Cryptographic controls",
+                "SOC2": "CC6.1 - Encryption at rest",
+                "PDPL": "Encryption of personal data"
+            }
+        },
+        {
+            "control": "Honeyfile Access",
+            "status": "PASS",
+            "detail": "No suspicious access",
+            "frameworks": {
+                "ISO27001": "A.12.4.1 - Event logging",
+                "SOC2": "CC7.2 - Monitor system activity",
+                "PDPL": "Incident detection & alerts"
+            }
+        },
+        {
+            "control": "Unsafe File Detection",
+            "status": "FAIL",
+            "detail": "High entropy secrets in passwords.csv",
+            "frameworks": {
+                "ISO27001": "A.8.2.3 - Handling of sensitive data",
+                "SOC2": "CC6.6 - Information handling",
+                "PDPL": "Data leakage prevention"
+            }
+        },
+        {
+            "control": "Clipboard Monitoring",
+            "status": "PASS",
+            "detail": "No sensitive data in clipboard",
+            "frameworks": {
+                "ISO27001": "A.13.2.3 - Electronic messaging",
+                "SOC2": "CC6.6 - Prevent unauthorized disclosure",
+                "PDPL": "Data loss prevention"
+            }
+        },
+        {
+            "control": "MFA/Password Manager",
+            "status": "FAIL",
+            "detail": "No password manager detected",
+            "frameworks": {
+                "ISO27001": "A.9.4.2 - Secure log-on procedures",
+                "SOC2": "CC6.2 - MFA for authentication",
+                "PDPL": "Authentication & access control"
+            }
+        },
+        {
+            "control": "Audit Logging",
+            "status": "FAIL",
+            "detail": "Auditing disabled in some categories",
+            "frameworks": {
+                "ISO27001": "A.12.4.1 - Event logging",
+                "SOC2": "CC7.2 - Logging and monitoring",
+                "PDPL": "Audit logging & evidence"
+            }
+        },
+        {
+            "control": "Browser Password Policy",
+            "status": "FAIL",
+            "detail": "Chrome password saving not restricted by policy",
+            "frameworks": {
+                "ISO27001": "A.5.15 - Access control",
+                "SOC2": "CC6.1 - Restrict access & protect data",
+                "PDPL": "Authentication & credential hygiene"
+            }
+        },
+        {
+            "control": "Auto Session Lock",
+            "status": "FAIL",
+            "detail": "Screen timeout not configured",
+            "frameworks": {
+                "ISO27001": "A.9.2.4 - Session timeout",
+                "SOC2": "CC6.8 - Session termination",
+                "PDPL": "Access control & session management"
+            }
+        },
+        {
+            "control": "LSASS Protection",
+            "status": "FAIL",
+            "detail": "LSASS not running as Protected Process",
+            "frameworks": {
+                "ISO27001": "A.8.9 - Configuration management",
+                "SOC2": "CC6.1 - Protection of assets",
+                "PDPL": "System security configuration"
+            }
+        }
+    ]
+}
